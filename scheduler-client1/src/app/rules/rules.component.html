@@ -1,0 +1,29 @@
+<div style="text-align:center">
+  Enter date: <input [(ngModel)]="newRule.day" placeholder="MM/DD/YYYY" name="day">
+<br>
+<br>
+  Enter time: <input [(ngModel)]="newRule.timeslot" placeholder="HH:MM" name="timeslot">
+<br>
+<br>
+<button (click)="createRule(newRule)">Create Rule</button>
+<br>
+</div>
+<br>
+<h3>The rules you created are:</h3>
+<ul style="list-style-type:none">
+  <li *ngFor="let rule of rules">
+        {{rule.day}} at {{rule.timeslot}}  <button (click)="deleteRule(rule); $event.stopPropagation()">Delete</button><br><br>
+  </li>
+</ul>
+<label for="emailAddress">Email:</label>
+<input name="emailAddress" placeholder="receiver@example.com" #emailAddress>
+<button (click)="sendEmail(emailAddress)">
+Send
+</button>
+
+<h3>My Appointments</h3>
+<ul style="list-style-type:none">
+  <li *ngFor="let appointment of appointments">
+        {{appointment.day}} at {{appointment.timeslot}}  <button (click)="deleteAppointment(appointment); $event.stopPropagation()">Delete</button><br><br>
+  </li>
+</ul>
