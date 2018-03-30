@@ -1,0 +1,10 @@
+<div *ngIf="rule" style="text-align:center">
+  <ul style="list-style-type:none; text-align:center">
+    <li>{{rule.timeslot}}<br><br>
+    </li>
+  </ul>
+  <div>
+    <button (click)="goBack()"> Back </button>
+    <button (click)="selectTime(rule)"> Select </button>
+  </div>
+</div>

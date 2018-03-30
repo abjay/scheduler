@@ -1,0 +1,6 @@
+<h3>Select the day that works best for you:</h3>
+<ul style="list-style-type:none">
+  <li *ngFor="let rule of rules" (click)="showTimeslot(rule)">
+    <button>{{rule.day}}</button><br><br>
+  </li>
+</ul>
