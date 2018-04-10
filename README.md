@@ -7,14 +7,13 @@ In the terminal cd to the backend project folder (scheduler) and type the comman
 `$ ./gradlew run -x test`
 
 ### Prerequisites for backend to run:
-* Eclipse IDE with Gradle Buildship plugin
-* If another IDE is used, make sure to have the necessary plugins installed
-* MySql database running in the background
+* [Gradle](https://gradle.org/)
+* [MySql database](https://www.mysql.com/)
 
 ## Once the backend is running, go ahead and run the frontend as follows:
 In the terminal cd to the frontend project folders (scheduler-client1 and scheduler-client2) and type the command: <br/>
 `$ npm start`
 
 ### Prerequisites:
-* Angular CLI
-* Visual Studio Code or any other IDE to view Angular files
+* [Node.js](https://nodejs.org/en/) with npm installed
+* [Angular CLI](https://cli.angular.io/)
